@@ -4,20 +4,24 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import lombok.AllArgsConstructor;
+import steps.backend.GenerateTokenStep;
 
 @AllArgsConstructor
 public class GenerateTokenStepDefinition {
+    public GenerateTokenStep generateTokenStep;
+
     @Given("user on test environment")
-    public void userOnTestEnvironment() {
-        
+    public void setEnvironment() {
+        generateTokenStep.setEnvironment();
     }
 
     @When("user generate token using {string} and {string} credential account")
-    public void userGenerateTokenUsingAndCredentialAccount(String arg0, String arg1) {
-        
+    public void generateTokenUsingAndCredentialAccount(String email, String password) {
+        generateTokenStep.generateTokenUsingAndCredentialAccount(email, password);
     }
 
     @Then("user get http request status code of {string}")
-    public void userGetHttpRequestStatusCodeOf(String arg0) {
+    public void getHttpRequestStatusCodeOf(String status) {
+        generateTokenStep.getHttpRequestStatusCodeOf(status);
     }
 }

@@ -5,14 +5,14 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class GenerateTokenStep {
 
-    public void userOnTestEnvironment() {
+    public void setEnvironment() {
 
     }
 
-    public void userGenerateTokenUsingAndCredentialAccount(String arg0, String arg1) {
+    public void generateTokenUsingAndCredentialAccount(String email, String password) {
 
     }
 
-    public void userGetHttpRequestStatusCodeOf(String arg0) {
+    public void getHttpRequestStatusCodeOf(String status) {
     }
 }
