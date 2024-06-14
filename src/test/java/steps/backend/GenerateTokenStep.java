@@ -5,10 +5,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class GenerateTokenStep {
 
-    public void setEnvironment() {
-
-    }
-
     public void generateTokenUsingAndCredentialAccount(String email, String password) {
 
     }
