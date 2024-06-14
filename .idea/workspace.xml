@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00592e2c-4b3e-4cf6-868f-c282686817ca" name="Changes" comment="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+    <list default="true" id="00592e2c-4b3e-4cf6-868f-c282686817ca" name="Changes" comment="- Update Dashboard.feature to Login.feature">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/MainDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ClickUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DriverUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ElementUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/SystemUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/TypeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/frontend/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/frontend/LoginStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/backend/list/ListStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/backend/list/ListStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/frontend/DashboardStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/frontend/LoginStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/frontend/Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feature/frontend/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/frontend/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/frontend/LoginStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "E:/File Kerja/QA Tools/Selenium/test-automation-selenium/src/test/java",
     "last_opened_file_path": "E:/File Kerja/QA Tools/Selenium/test-automation-selenium/src/test/java/stepdefinitions/frontend",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
@@ -108,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718330410273</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Update Dashboard.feature to Login.feature">
+      <created>1718331797769</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718331797769</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commmit" />
     <MESSAGE value="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum" />
+    <MESSAGE value="- Update Dashboard.feature to Login.feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Update Dashboard.feature to Login.feature" />
   </component>
 </project>
