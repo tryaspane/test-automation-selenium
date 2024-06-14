@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00592e2c-4b3e-4cf6-868f-c282686817ca" name="Changes" comment="initial commmit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/backend/ListStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/frontend/Dashboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/backend/EnvironmentStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/backend/list/ListStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/frontend/DashboardStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/frontend/Dashboard.feature" afterDir="false" />
+    <list default="true" id="00592e2c-4b3e-4cf6-868f-c282686817ca" name="Changes" comment="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/backend/GenerateTokenStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/backend/GenerateTokenStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/backend/GenerateTokenStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/backend/GenerateTokenStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/frontend/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feature/backend/List.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/frontend/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/frontend/LoginStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/backend/list/ListStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/backend/list/ListStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/frontend/DashboardStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/frontend/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/frontend/Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feature/frontend/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +62,7 @@
     <configuration name="Scenario: Verify access landing page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/frontend/Dashboard.feature" />
+      <option name="GLUE" value="stepdefinitions.frontend" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="test-automation-selenium" />
       <option name="NAME_FILTER" value="^Verify access landing page$" />
@@ -104,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718271880438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum">
+      <created>1718330410273</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718330410273</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commmit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commmit" />
+    <MESSAGE value="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add Dashboard.feature&#10;- Add List.feature&#10;- Add Test Step&#10;- Add folder package for Dto, Page , Enum" />
   </component>
 </project>
