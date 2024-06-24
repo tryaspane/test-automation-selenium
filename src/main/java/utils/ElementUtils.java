@@ -1,13 +1,39 @@
 package utils;
 
 import dto.MainDto;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.time.Duration;
+
 public class ElementUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(ElementUtils.class);
+    private static final int WAIT_TIME = Integer.parseInt(SystemUtils.getConfig("explicit.wait.limit"));
+
+    public static boolean isElementDisplayed(MainDto mainDto, WebElement element, int waitTimeInSeconds) {
+        LOGGER.debug("Checking if WebElement: {} is displayed", element);
+        if (element == null) {
+            LOGGER.debug("Element is null ..");
+            return false;
+        }
+        WebDriverWait wait = new WebDriverWait(mainDto.getDriver(), Duration.ofSeconds(waitTimeInSeconds));
+        try {
+            boolean isElementDisplayed = wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+            LOGGER.debug("element is displayed? = {}", isElementDisplayed);
+            return isElementDisplayed;
+        }
+        catch (TimeoutException | NoSuchElementException | IndexOutOfBoundsException exception) {
+            LOGGER.debug("Element: {} is not displayed", element);
+            return false;
+        }
+        catch (StaleElementReferenceException e){
+            LOGGER.debug("StaleElementReferenceException encountered, will try to fix!");
+            return wait.until(ExpectedConditions.elementToBeClickable(getRefreshedStaleElement(mainDto, element))).isDisplayed();
+        }
+    }
 
     public static By getElementLocator(WebElement element){
         LOGGER.debug("getting web element locator of = {}", element);
@@ -38,5 +64,9 @@ public class ElementUtils {
     public static WebElement findByElementNoWait(MainDto mainDto, By by){
         LOGGER.debug("finding by element by = {}", by);
         return mainDto.getDriver().findElement(by);
+    }
+
+    public static boolean isElementDisplayed(MainDto mainDto, WebElement element){
+        return isElementDisplayed(mainDto, element, WAIT_TIME);
     }
 }
